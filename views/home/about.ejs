@@ -21,9 +21,26 @@
                 </ul>
           <hr class="my-4">
           <p>만약 이 메뉴가 좋다면 like를 눌러주세요!</p>
-             <div style="font-size:3em; color:Pink">
-              <i class="far fa-heart" role="button"> 0</i>
-             </div>
+            <button><i class="far fa-heart"></i> 0</button>
+
+            <script>
+              document.addEventListener('DOMContentLoaded', function () {
+                $('button').on('click', function () {
+                  $(this)
+                    .find('[data-fa-i2svg]')
+                    .toggleClass('fas fa-heart')
+                    .toggleClass('far fa-heart');
+                });
+              });
+            </script>
+<script>
+  FontAwesomeConfig = { autoReplaceSvg: 'nest' }
+</script>
+<i class="my-icon fas fa-coffee" data-fa-mask="fas fa-circle"></i>
+<i class="my-icon" data-fa-mask="fas fa-circle" data-fa-i2svg="">
+  <svg class="svg-inline--fa fa-coffee fa-w-16" data-fa-mask="fas fa-circle" aria-hidden="true" data-fa-i2svg="" data-prefix="fas" data-icon="coffee" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">...</svg>
+</i>
+
   
         </div>
 
