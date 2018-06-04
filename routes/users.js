@@ -39,7 +39,7 @@ router.get("/:username", util.isLoggedin, function(req, res){
     res.render("users/show", {user:user});
   });
 });
-
+/*
 // edit
 router.get("/:username/edit", util.isLoggedin, checkPermission, function(req, res){
   var user = req.flash("user")[0];
@@ -53,7 +53,7 @@ router.get("/:username/edit", util.isLoggedin, checkPermission, function(req, re
     res.render("users/edit", { username:req.params.username, user:user, errors:errors });
   }
 });
-
+*/
 // update
 router.put("/:username", util.isLoggedin, checkPermission, function(req, res, next){
   User.findOne({username:req.params.username})
