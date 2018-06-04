@@ -90,8 +90,9 @@ form .form-group{
   font-size: 12px;
 }
 .post h2 {
-  color: tomato;
+  color: #2EC4B6;
   text-align: center;
+  font-size: 40px;
 }
 .post .post-body {
   white-space: pre-line;
@@ -138,7 +139,7 @@ form .form-group{
   border-bottom: 1px solid #ccc;
 }
 .post .posts tbody tr:nth-child(odd){
-  background-color: #F4FFFF;
+  background-color: #EFFFE9;
 }
 .post .posts tbody .noData{
   background-color: #FFFFFF;
@@ -192,4 +193,26 @@ form .form-group{
 .user-edit hr{
   margin-top: 5px;
   margin-bottom: 11px;
+}
+
+.jumbotron{
+  margin-right: 10px;
+  width: 550px;
+  height: 600px;
+  float: left;
+  background-color: #EFFFE9;
+}
+
+
+.menu{
+  height: 350px;
+}
+
+.welcome{
+    background-color: #F5F5F5;
+    height: auto;
+    width: auto;
+    padding: 15px 50px 50px 30px;
+    float: left;
+    background-color: #EFFFE9;
 }
